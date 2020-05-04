@@ -18,6 +18,7 @@ export class HomePage {
     public p: Platform,
   ) {
     this.basePath = this.file.dataDirectory;
+    this.logs.push(new Log(`Base Path`, `basePath initialized with ${this.basePath}`))
   }
 
   createFolder() {
