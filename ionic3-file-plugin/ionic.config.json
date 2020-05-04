@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-file-plugin",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

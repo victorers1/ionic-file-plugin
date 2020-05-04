@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Criador de pastas
+    </ion-title>
+  </ion-navbar>
+
+  <ion-item padding>
+    <ion-label floating>Nome</ion-label>
+    <ion-input [(ngModel)]="folderName" type="text"></ion-input>
+  </ion-item>
+
+  <button ion-button full color="danger" (click)="createFolder()">
+    Criar pasta
+  </button>
+</ion-header>
+
+<ion-content>
+  <ion-list text-wrap>
+    <ion-item *ngFor="let l of logs; let i = index">
+
+      <h3><b>{{i}}: {{l.title}}</b></h3>
+      <pre><code>{{l.body}}</code></pre>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>
